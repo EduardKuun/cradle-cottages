@@ -179,6 +179,13 @@ hr.fancy:after {
   color: #5f5641;
   padding-top: 20px;
 }
+#images-heading > h1 a {
+  text-decoration: none;
+  color: #5f5641;
+}
+#images-heading > h1 a:hover {
+  color: #3d3626;
+}
 
 .lb-image {
   border: 0px !important;

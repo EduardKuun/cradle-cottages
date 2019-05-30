@@ -122,6 +122,13 @@ hr.fancy:after {
   font-weight: 500;
   color: #5f5641;
 }
+#tariffs h1 a {
+  text-decoration: none;
+  color: #5f5641;
+}
+#tariffs h1 a:hover {
+  color: #3d3626;
+}
 #tariffs h5 {
   font-size: 1.2rem;
   font-weight: 500;
