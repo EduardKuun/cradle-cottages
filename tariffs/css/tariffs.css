@@ -135,9 +135,9 @@ hr.fancy:after {
   font-weight: 500;
 }
 #tariffs th {
-  color: #eeebe4;
-  background-color: #69614c;
-  border: 1px solid #333;
+  color: #f3f1eb;
+  background-color: #5f5641;
+  border: 1px solid #3d3626;
 }
 #tariffs td {
   color: #5f5641;
@@ -146,7 +146,7 @@ hr.fancy:after {
 /*ENQUIRE BUTTON*/
 #enquire-button {
   text-align: center;
-  margin: 10px 10px 25px 10px;
+  margin: 10px 10px 50px 10px;
 }
 #enquire-button a {
   background-color: #fff;
@@ -193,6 +193,15 @@ hr.fancy:after {
   margin: 50px 5px;
   color: #5f5641;
 }
+
+/*TERMS*/
+#terms h2 {
+  color: #5f5641;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 15px 10px 0 10px;
+}
+
 
 /*FOOTER*/
 #footer {

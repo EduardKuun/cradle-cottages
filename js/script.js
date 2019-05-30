@@ -21,6 +21,13 @@ window.onscroll = function () {
   }
 }
 
+/*LIGHTBOX*/
+lightbox.option({
+  'disableScrolling': true,
+  'wrapAround': true
+});
+
+
 /*COPYRIGHT YEAR*/
 var currentDate = new Date();
 var currentYear = currentDate.getFullYear();

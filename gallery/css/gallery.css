@@ -130,19 +130,19 @@ hr.fancy:after {
 }
 
 /*IMAGES*/
-#images {
+#images-friesland, #images-weaver {
   width: 80%;
   margin: auto;
-  padding: 35px 0 50px 0;
+  padding: 10px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
 }
-#images img {
+#images-friesland img, #images-weaver img {
   transition: 0.5s;
   width: 100%;
 }
-#images img:hover {
+#images-friesland img:hover, #images-weaver img:hover {
   transform: scale(1.06);
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
 }
@@ -164,6 +164,25 @@ hr.fancy:after {
 #enquire-button a:hover {
   background-color: #A39374;
   color: #fff;
+}
+
+/*IMAGE HEADING*/
+#images-heading {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+#images-heading > h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5f5641;
+  padding-top: 20px;
+}
+
+.lb-image {
+  border: 0px !important;
+  box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.5) !important;
 }
 
 /*FOOTER*/
@@ -280,12 +299,12 @@ hr.fancy:after {
   #gallery {
     padding-top: 130px;
   }
-  #images {
+  #images-friesland, #images-weaver {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media(max-width: 700px) {
-  #images {
+  #images-friesland, #images-weaver {
     grid-template-columns: repeat(3, 1fr);
   }
   #footer > div {
@@ -296,7 +315,7 @@ hr.fancy:after {
   }
 }
 @media(max-width: 550px) {
-  #images {
+  #images-friesland, #images-weaver {
     grid-template-columns: repeat(2, 1fr);
   }
 }
