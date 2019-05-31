@@ -336,6 +336,11 @@ hr.fancy:after {
     padding-top: 130px;
   }
 }
+@media(max-width: 850px) {
+  #details > div {
+    display: block;
+  }
+}
 @media(max-width: 700px) {
   #footer > div {
     display: block;
