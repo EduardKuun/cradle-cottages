@@ -60,7 +60,7 @@ hr.fancy:after {
   transition: 0.5s;
   padding: 40px 1rem 50px 1rem;
   text-transform: uppercase;
-  font-size: 0.86rem;
+  font-size: 0.8rem;
 }
 .nav-item:hover {
   color: #A39374 !important;
@@ -113,8 +113,8 @@ hr.fancy:after {
 /*LANDING*/
 #landing {
   height: 87vh;
-  background: url(../img/landing.jpeg);
-  background-position: center;
+  background: url(../img/new2.jpg);
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -304,7 +304,7 @@ hr.fancy:after {
 }
 #footer i {
   color: #5f5641;
-  padding-top: 4px;
+  padding-top: 7px;
 }
 #footer #contact-us div {
   display: grid;

@@ -1,7 +1,7 @@
 /*NAVBAR*/
 (function(){
   window.onscroll = function () {
-    let scrolledFromTop = window.pageYOffset;
+    var scrolledFromTop = window.pageYOffset;
     if (scrolledFromTop >= 70) {
       document.querySelector('.navbar').style.cssText = "padding: 0 10px !important;";
       document.querySelector('.navbar-brand img').style.cssText = "padding: 5px 10px !important;";

@@ -59,7 +59,7 @@ hr.fancy:after {
   transition: 0.5s;
   padding: 40px 1rem 50px 1rem;
   text-transform: uppercase;
-  font-size: 0.86rem;
+  font-size: 0.8rem;
 }
 .nav-item:hover {
   color: #A39374 !important;
@@ -126,6 +126,80 @@ hr.fancy:after {
   font-weight: 500;
   color: #A39374;
   padding: 0 10px 20px 10px;
+}
+
+/*DETAILS*/
+#details > div {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 40px;
+}
+#details #images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+#details #images img {
+  width: 100%;
+}
+#details main #overview {
+  margin: 30px 0;
+  color: #5f5641;
+  font-weight: 500;
+}
+#details aside #rates h3 {
+  color: #A39374;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#details aside #rates p {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: #3d3626;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+#details aside #rates #view-rates {
+  text-align: center;
+  margin: 30px 5px 40px 5px;
+}
+#details aside #view-rates a {
+  background-color: #fff;
+  color: #A39374;
+  border: 2px solid #A39374;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+#details aside #view-rates a:hover {
+  background-color: #A39374;
+  color: #fff;
+}
+#details #services h3 {
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 20px 0 15px 0;
+  color: #5f5641;
+}
+#details #services ul {
+  list-style: none;
+  padding: 0;
+}
+#details #services ul li {
+  color: #3d3626;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+#details #services i {
+  color: #A39374;
+  padding: 0 5px;
 }
 
 /*ENQUIRE BUTTON*/
@@ -208,7 +282,7 @@ hr.fancy:after {
 }
 #footer i {
   color: #5f5641;
-  padding-top: 4px;
+  padding-top: 7px;
 }
 #footer #contact-us div {
   display: grid;

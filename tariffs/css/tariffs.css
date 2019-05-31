@@ -58,7 +58,7 @@ hr.fancy:after {
   transition: 0.5s;
   padding: 40px 1rem 50px 1rem;
   text-transform: uppercase;
-  font-size: 0.86rem;
+  font-size: 0.8rem;
 }
 .nav-item:hover {
   color: #A39374 !important;
@@ -199,9 +199,18 @@ hr.fancy:after {
 #disclaimer p {
   margin: 50px 5px;
   color: #5f5641;
+  font-weight: 500;
 }
 
 /*TERMS*/
+#terms > div p {
+  color: #5f5641;
+  font-weight: 500;
+}
+#terms > table {
+  margin: auto;
+  margin-bottom: 30px;
+}
 #terms h2 {
   color: #5f5641;
   font-size: 1.5rem;
