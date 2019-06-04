@@ -128,6 +128,11 @@ hr.fancy:after {
 #landing {
   height: 92vh;
   background: url(../gallery/images/f8.jpg);
+  background: url(../gallery/images/f8.jpg),
+  url(../gallery/images/w13.jpg),
+  url(../gallery/images/w20.jpg),
+  url(../gallery/images/w7.jpg),
+  url(../gallery/images/f16.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
