@@ -110,13 +110,30 @@ hr.fancy:after {
   transform: rotate(0);
 }
 
+@keyframes fade {
+  0%{background-image: url(../gallery/images/f8.jpg);}
+  10%{background-image: url(../gallery/images/f8.jpg);}
+  20%{background-image: url(../gallery/images/w13.jpg);}
+  30%{background-image: url(../gallery/images/w13.jpg);}
+  40%{background-image: url(../gallery/images/w20.jpg);}
+  50%{background-image: url(../gallery/images/w20.jpg);}
+  60%{background-image: url(../gallery/images/w7.jpg);}
+  70%{background-image: url(../gallery/images/w7.jpg);}
+  80%{background-image: url(../gallery/images/f16.jpg);}
+  90%{background-image: url(../gallery/images/f16.jpg);}
+  100%{background-image: url(../gallery/images/f8.jpg);}
+}
+
 /*LANDING*/
 #landing {
   height: 92vh;
-  background: url(../img/landing.jpeg);
+  background: url(../gallery/images/f8.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation-name: fade;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
 }
 
 /*OVERVIEW*/
@@ -354,6 +371,9 @@ hr.fancy:after {
   .nav-link:hover {
     border: none !important;
   }
+  #landing {
+    height: 70vh;
+  }
 }
 @media(max-width: 700px) {
   #activity-list i {
@@ -367,5 +387,8 @@ hr.fancy:after {
   }
   #footer > div > div {
     padding: 20px 0;
+  }
+  #landing {
+    height: 55vh;
   }
 }
