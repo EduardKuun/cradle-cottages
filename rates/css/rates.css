@@ -108,45 +108,45 @@ hr.fancy:after {
   transform: rotate(0);
 }
 
-/*TARIFFS*/
-#tariffs {
+/*RATES*/
+#rates {
   padding-top: 160px;
 }
-#tariffs > div {
+#rates > div {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-#tariffs h1 {
+#rates h1 {
   font-size: 1.8rem;
   font-weight: 500;
   color: #5f5641;
 }
-#tariffs h1 a {
+#rates h1 a {
   text-decoration: none;
   color: #5f5641;
 }
-#tariffs h1 a:hover {
+#rates h1 a:hover {
   color: #3d3626;
 }
-#tariffs h5 {
+#rates h5 {
   font-size: 1.2rem;
   font-weight: 500;
   color: #A39374;
   padding: 0 10px 20px 10px;
 }
-#tariffs table, #tariffs th, #tariffs td {
+#rates table, #rates th, #rates td {
   border: 1px solid #A39374;
   border-collapse: collapse;
   padding: 5px 20px;
   font-weight: 500;
 }
-#tariffs th {
+#rates th {
   color: #f3f1eb;
   background-color: #5f5641;
   border: 1px solid #3d3626;
 }
-#tariffs td {
+#rates td {
   color: #5f5641;
 }
 
@@ -330,7 +330,7 @@ hr.fancy:after {
   .nav-link:hover {
     border: none !important;
   }
-  #tariffs {
+  #rates {
     padding-top: 130px;
   }
 }

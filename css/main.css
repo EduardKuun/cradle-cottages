@@ -220,6 +220,9 @@ hr.fancy:after {
   font-size: 4rem;
   color: #A39374;
 }
+#quick-info a {
+  color: #3d3626;
+}
 
 /*ENQUIRE BUTTON*/
 #enquire-button {
