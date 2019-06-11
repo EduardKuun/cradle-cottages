@@ -111,29 +111,26 @@ hr.fancy:after {
 }
 
 @keyframes fade {
-  0%{background-image: url(../gallery/images/f8.jpg);}
-  10%{background-image: url(../gallery/images/f8.jpg);}
-  20%{background-image: url(../gallery/images/w13.jpg);}
-  30%{background-image: url(../gallery/images/w13.jpg);}
-  40%{background-image: url(../gallery/images/w20.jpg);}
-  50%{background-image: url(../gallery/images/w20.jpg);}
-  60%{background-image: url(../gallery/images/w7.jpg);}
-  70%{background-image: url(../gallery/images/w7.jpg);}
-  80%{background-image: url(../gallery/images/f16.jpg);}
-  90%{background-image: url(../gallery/images/f16.jpg);}
-  100%{background-image: url(../gallery/images/f8.jpg);}
+  0%{background-image: url(../gallery/images/w12.jpg);}
+  12%{background-image: url(../gallery/images/w12.jpg);}
+  24%{background-image: url(../gallery/images/w14.jpg);}
+  36%{background-image: url(../gallery/images/w14.jpg);}
+  48%{background-image: url(../gallery/images/f12.jpg);}
+  60%{background-image: url(../gallery/images/f12.jpg);}
+  72%{background-image: url(../gallery/images/w13.jpg);}
+  85%{background-image: url(../gallery/images/w13.jpg);}
+  100%{background-image: url(../gallery/images/w12.jpg);}
 }
 
 /*LANDING*/
 #landing {
   height: 92vh;
-  background: url(../gallery/images/f8.jpg);
-  background: url(../gallery/images/f8.jpg),
-  url(../gallery/images/w13.jpg),
-  url(../gallery/images/w20.jpg),
-  url(../gallery/images/w7.jpg),
-  url(../gallery/images/f16.jpg);
-  background-position: center;
+  background: url(../gallery/images/w12.jpg);
+  background: url(../gallery/images/w12.jpg),
+  url(../gallery/images/w14.jpg),
+  url(../gallery/images/f12.jpg),
+  url(../gallery/images/w13.jpg);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   animation-name: fade;
@@ -434,5 +431,6 @@ hr.fancy:after {
   }
   #landing {
     height: 55vh;
+    background-position: center;
   }
 }
