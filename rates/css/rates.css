@@ -163,6 +163,7 @@ hr.fancy:after {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.4s;
+  font-weight: 400;
 }
 #enquire-button a:hover {
   background-color: #A39374;
@@ -222,7 +223,7 @@ hr.fancy:after {
 /*FOOTER*/
 #footer {
   background-color: #f7f4f0;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-top: 30px;
 }
 #footer h3 {
@@ -230,14 +231,25 @@ hr.fancy:after {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
-  padding: 20px 0;
 }
 #footer > div {
   width: 80%;
   margin: auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+}
+#footer > div > div {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  vertical-align: text-top;
+}
+#footer > div > div:nth-child(1) {
+  width: 40%;
+}
+#footer > div > div:nth-child(2) {
+  width: 25%;
+}
+#footer > div > div:nth-child(3) {
+  width: 33%;
 }
 #footer #branding-footer {
   text-align: center;
@@ -280,14 +292,20 @@ hr.fancy:after {
 }
 #footer i {
   color: #5f5641;
-  padding-top: 4px;
+  padding-top: 7px;
 }
 #footer #contact-us div {
-  display: grid;
-  grid-template-columns: 30px 1fr;
+  display: block;
 }
-#footer #contact-us * {
+#footer #contact-us i, #footer #contact-us p {
   text-transform: none;
+  display: inline-block;
+}
+#footer #contact-us div:nth-child(2) {
+  white-space: nowrap;
+}
+#footer #contact-us i {
+  padding-right: 5px;
 }
 #footer #copyright p {
   text-align: center;
@@ -334,9 +352,10 @@ hr.fancy:after {
     padding-top: 130px;
   }
 }
-@media(max-width: 700px) {
-  #footer > div {
+@media(max-width: 850px) {
+  #footer > div > div {
     display: block;
+    width: 100% !important;
   }
   #footer > div > div {
     padding: 20px 0;

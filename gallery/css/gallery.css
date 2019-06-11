@@ -134,16 +134,14 @@ hr.fancy:after {
   width: 80%;
   margin: auto;
   padding: 10px 0 50px 0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 15px;
 }
 #images-friesland img, #images-weaver img {
   transition: 0.5s;
-  width: 100%;
+  width: 19%;
+  margin: 5px 1px;
 }
 #images-friesland img:hover, #images-weaver img:hover {
-  transform: scale(1.06);
+  transform: scale(1.1);
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
 }
 
@@ -195,7 +193,7 @@ hr.fancy:after {
 /*FOOTER*/
 #footer {
   background-color: #f7f4f0;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-top: 30px;
 }
 #footer h3 {
@@ -203,14 +201,25 @@ hr.fancy:after {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
-  padding: 20px 0;
 }
 #footer > div {
   width: 80%;
   margin: auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+}
+#footer > div > div {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  vertical-align: text-top;
+}
+#footer > div > div:nth-child(1) {
+  width: 40%;
+}
+#footer > div > div:nth-child(2) {
+  width: 25%;
+}
+#footer > div > div:nth-child(3) {
+  width: 33%;
 }
 #footer #branding-footer {
   text-align: center;
@@ -256,11 +265,17 @@ hr.fancy:after {
   padding-top: 7px;
 }
 #footer #contact-us div {
-  display: grid;
-  grid-template-columns: 30px 1fr;
+  display: block;
 }
-#footer #contact-us * {
+#footer #contact-us i, #footer #contact-us p {
   text-transform: none;
+  display: inline-block;
+}
+#footer #contact-us div:nth-child(2) {
+  white-space: nowrap;
+}
+#footer #contact-us i {
+  padding-right: 5px;
 }
 #footer #copyright p {
   text-align: center;
@@ -306,23 +321,24 @@ hr.fancy:after {
   #gallery {
     padding-top: 130px;
   }
-  #images-friesland, #images-weaver {
-    grid-template-columns: repeat(4, 1fr);
+  #images-friesland img, #images-weaver img {
+    width: 24%;
   }
 }
-@media(max-width: 700px) {
-  #images-friesland, #images-weaver {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  #footer > div {
+@media(max-width: 850px) {
+  #footer > div > div {
     display: block;
+    width: 100% !important;
   }
   #footer > div > div {
     padding: 20px 0;
   }
+  #images-friesland img, #images-weaver img {
+    width: 31%;
+  }
 }
 @media(max-width: 550px) {
-  #images-friesland, #images-weaver {
-    grid-template-columns: repeat(2, 1fr);
+  #images-friesland img, #images-weaver img {
+    width: 48%;
   }
 }

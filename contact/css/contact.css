@@ -121,6 +121,7 @@ hr.fancy:after {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.4s;
+  font-weight: 400;
 }
 #enquire-button a:hover {
   background-color: #A39374;
@@ -153,24 +154,6 @@ hr.fancy:after {
   color: #A39374;
   padding: 0 10px 20px 10px;
 }
-#name {
-  grid-area: name;
-}
-#number {
-  grid-area: number;
-}
-#email {
-  grid-area: email;
-}
-#accommodation {
-  grid-area: accommodation;
-}
-#message {
-  grid-area: message;
-}
-#submit-button {
-  grid-area: button;
-}
 #contact input, #contact textarea, #contact select {
   width: 100%;
   margin: 7px;
@@ -193,15 +176,8 @@ hr.fancy:after {
   background-color: #f0eee9;
   background-size: 20px;
 }
-#contact form {
-  display: grid;
-  grid-template-areas:
-    "name number"
-    "email email"
-    "accommodation accommodation"
-    "message message"
-    "button button";
-  grid-column-gap: 14px;
+#contact select::-ms-expand {
+  display: none;
 }
 #contact #submit-button button {
   background-color: #fff;
@@ -212,6 +188,7 @@ hr.fancy:after {
   text-transform: uppercase;
   transition: 0.4s;
   margin: 10px 10px 25px 10px;
+  font-weight: 400;
 }
 #contact #submit-button button:hover {
   background-color: #A39374;
@@ -242,10 +219,12 @@ hr.fancy:after {
 #contact-info > div {
   width: 80%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
   padding-bottom: 25px;
+}
+#contact-info > div > div {
+  width: 32%;
+  display: inline-block;
+  vertical-align: text-top;
 }
 #contact-info h4 {
   color: #A39374;
@@ -293,7 +272,7 @@ hr.fancy:after {
 /*FOOTER*/
 #footer {
   background-color: #f7f4f0;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-top: 30px;
 }
 #footer h3 {
@@ -301,14 +280,25 @@ hr.fancy:after {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
-  padding: 20px 0;
 }
 #footer > div {
   width: 80%;
   margin: auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+}
+#footer > div > div {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  vertical-align: text-top;
+}
+#footer > div > div:nth-child(1) {
+  width: 40%;
+}
+#footer > div > div:nth-child(2) {
+  width: 25%;
+}
+#footer > div > div:nth-child(3) {
+  width: 33%;
 }
 #footer #branding-footer {
   text-align: center;
@@ -354,11 +344,17 @@ hr.fancy:after {
   padding-top: 7px;
 }
 #footer #contact-us div {
-  display: grid;
-  grid-template-columns: 30px 1fr;
+  display: block;
 }
-#footer #contact-us * {
+#footer #contact-us i, #footer #contact-us p {
   text-transform: none;
+  display: inline-block;
+}
+#footer #contact-us div:nth-child(2) {
+  white-space: nowrap;
+}
+#footer #contact-us i {
+  padding-right: 5px;
 }
 #footer #copyright p {
   text-align: center;
@@ -405,20 +401,16 @@ hr.fancy:after {
     padding-top: 125px;
   }
 }
-@media(max-width: 700px) {
-  #contact form {
+@media(max-width: 850px) {
+  #footer > div > div {
     display: block;
-  }
-  #contact-info > div {
-    display: block;
-  }
-  #contact-info > div > div {
-    padding: 10px;
-  }
-  #footer > div {
-    display: block;
+    width: 100% !important;
   }
   #footer > div > div {
     padding: 20px 0;
+  }
+  #contact-info > div > div {
+    display: block;
+    width: 100%;
   }
 }
