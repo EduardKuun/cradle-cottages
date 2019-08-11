@@ -225,28 +225,35 @@ hr.fancy:after {
   margin: 10px;
 }
 #enquire-button a {
+  border: 2px solid #A39374;
+  border-radius: 5px;
   display: inline;
   text-decoration: none;
-  background-color: #A39374;
-  padding: 15px 20px;
+  background-color: #fff;
+  padding: 18px 25px 16px 25px;
   transition: 0.3s;
 }
 #enquire-button a p {
-  color: #fff;
+  color: #A39374;
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 1.2rem;
   display: inline-block;
+  transition: 0.3s;
 }
 #enquire-button i {
-  color: #fff;
+  color: #A39374;
+  font-size: 1.2rem;
   display: inline-block;
-  padding-right: 8px;
+  padding-right: 10px;
+  transition: 0.3s;
 }
 #enquire-button a:hover {
-  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  background-color: #A39374;
+  box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.3);
 }
-#enquire-button a:hover {
-  text-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+#enquire-button a:hover i, #enquire-button a:hover p {
+  color: #fff;
 }
 #enquire-graphic img {
   width: 300px;
