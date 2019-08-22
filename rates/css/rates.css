@@ -144,7 +144,7 @@ hr.fancy:after {
   box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
 }
 #rates tr:nth-child(odd) {
-  background-color: #eee2cb;
+  background-color: #f5f0e7;
 }
 #rates th {
   color: #f3f1eb;

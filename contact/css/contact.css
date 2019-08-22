@@ -159,7 +159,7 @@ hr.fancy:after {
   margin: 7px;
   border: 0;
   outline: 0;
-  background-color: #F1E3C4;
+  background-color: #f5f0e7;
   padding: 15px;
   color: #444;
 }
@@ -173,7 +173,7 @@ hr.fancy:after {
   -moz-appearance: none;
   appearance: none;
   background: url(../img/select.png) 98% no-repeat #eee;
-  background-color: #F1E3C4;
+  background-color: #f5f0e7;
   background-size: 20px;
 }
 #contact select::-ms-expand {
